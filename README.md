@@ -13,19 +13,6 @@ Most FastAPI “starters” either:
 - stop at a hello-world + CRUD toy, or  
 - dump a whole product (e-commerce, SaaS, pharmacy, etc.) that you have to rip out.
 
-This project sits in the middle:
-
-| You get | You don’t get |
-|--------|----------------|
-| JWT auth + refresh tokens | Pharmacy / patient / POS domain |
-| Users + profiles | Inventory, drugs, prescriptions |
-| Roles & permissions scaffolding | Blog, messaging, telehealth |
-| Async SQLAlchemy + pool config | Hard-coded tenant branding |
-| Redis cache hooks | Forced multi-tenancy model |
-| Alembic ready | Cron jobs tied to stock/expiry |
-| Mail (OTP verify / reset) | Payment SaaS plans |
-| File upload + system settings | Enterprise BI / NAFDAC modules |
-| Admin & performance routes | JuneHS / product-specific CORS |
 
 Clone it, rename it to *your* product, and grow domain modules under `app/core/`.
 
